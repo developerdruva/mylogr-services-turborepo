@@ -19,15 +19,15 @@ const app = express();
 app.use(express.json());
 app.use(cors(corsOptions));
 // app.options("*", cors(corsOptions)); // Enable pre-flight requests for all routes
-app.use((req, res, next )=> {
+app.use((req, res, next) => {
   const timestamp = new Date();
-  console.log(timestamp + " - "+ req.headers?.origin)
-  next()
-})
+  console.log(timestamp + " - " + req.headers?.origin);
+  next();
+});
 
 app.get("/", (webReq, webRes) => {
-  //   console.log("welcome this is myspace rksann application running.");
-  //   console.log(process.env.AWS_POSTGRES_DATABASE);
+  console.log("welcome this is myspace rksann application running.");
+  console.log(process.env.AWS_POSTGRES_DATABASE);
   webRes.send({
     status: "success",
     message: "Server running successfully. Welcome to Myspace RKSANN!",
