@@ -1,13 +1,15 @@
 {
-  "version": 2,
-  "builds": [{ "src": "./index.js", "use": "@vercel/node" }],
+  "version": 1,
+  "builds": [
+    {
+      "src": "apps/api-mylogr/index.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/",
-      "headers": {
-        "x-vercel-protection": "off"
-      }
+      "dest": "apps/api-mylogr/index.js"
     }
   ]
 }

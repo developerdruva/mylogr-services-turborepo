@@ -8,11 +8,11 @@ const PORT = process.env.PORT || 8080;
 
 const cors = require("cors");
 
-const MyspaceRoutes = require("./routes/myspace.routes");
-const SampleDataRoutes = require("./routes/sample.data.routes");
-const UserAccountRoutes = require("./routes/account.user.routes");
+const MyspaceRoutes = require("./src/routes/myspace.routes");
+const SampleDataRoutes = require("./src/routes/sample.data.routes");
+const UserAccountRoutes = require("./src/routes/account.user.routes");
 // const todoListRoutes = require('./routes/todolist.user.routes');
-const corsOptions = require("./utils/corsOptions");
+const corsOptions = require("./src/utils/corsOptions");
 
 const app = express();
 
