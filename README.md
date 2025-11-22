@@ -1,3 +1,7 @@
+# mylogr-services-turborepo
+
+express and nodejs repositories for backend monorepository architechture
+
 # Turborepo starter
 
 This Turborepo starter is maintained by the Turborepo core team.
